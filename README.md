@@ -17,11 +17,11 @@ Bob Smith has recently come into a modest sum of money, and would like to fulfil
 
 **Pricing:**
 
-	There are a total of 38 neighborhoods within the city of Fargo itself (defined from Zillow’s OpenDataSoft), and median property value (ZHVI) can be also pulled in csv format from their site at https://www.zillow.com/research/data/ . While home value does not equal commercial property, it can be used to make general assumptions regarding relative costs likely associated.
+There are a total of 38 neighborhoods within the city of Fargo itself (defined from Zillow’s OpenDataSoft), and median property value (ZHVI) can be also pulled in csv format from their site at https://www.zillow.com/research/data/ . While home value does not equal commercial property, it can be used to make general assumptions regarding relative costs likely associated.
 
 **Crime:** 
-	While there are crime stats available for consumption, I thought it might be interesting to use a keyword search from Google and to scrape sites indexed there in order to create a crime index. Using Python’s request module to fetch and to Beautiful Soup to parse content from open sites, I compare a selection of keywords associated with violent crime to count the number articles that reference both crime and the neighborhood in question. (This is actually my first attempt at a Crawler/Scraper function, despite coding for quite a few years now).
+While there are crime stats available for consumption, I thought it might be interesting to use a keyword search from Google and to scrape sites indexed there in order to create a crime index. Using Python’s request module to fetch and to Beautiful Soup to parse content from open sites, I compare a selection of keywords associated with violent crime to count the number articles that reference both crime and the neighborhood in question. (This is actually my first attempt at a Crawler/Scraper function, despite coding for quite a few years now).
 
 **Categories:**
 
-	The category index is derived from the FourSquare API’s category attribute, and a list of unique venue categories is generated. From that list, a weighted list is manually generated based on the types of venues that would be indicative of a good area to open shop. Iterating through the venues, an index is created based on the number of most relevant venues within a given neighborhood.
+The category index is derived from the FourSquare API’s category attribute, and a list of unique venue categories is generated. From that list, a weighted list is manually generated based on the types of venues that would be indicative of a good area to open shop. Iterating through the venues, an index is created based on the number of most relevant venues within a given neighborhood.
